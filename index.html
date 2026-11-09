@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Adın Soyadın | Portfolyo</title>
+<meta name="description" content="Bilgisayar mühendisliği öğrencisi kişisel portfolyo / Computer engineering student portfolio">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a class="logo" href="#top">Adın Soyadın</a>
+  <nav>
+    <a href="#about"><span class="tr">Hakkımda</span><span class="en">About</span></a>
+    <a href="#projects"><span class="tr">Projeler</span><span class="en">Projects</span></a>
+    <a href="#skills"><span class="tr">Beceriler</span><span class="en">Skills</span></a>
+    <a href="#cv">CV</a>
+    <a href="#contact"><span class="tr">İletişim</span><span class="en">Contact</span></a>
+  </nav>
+  <div class="tools"><button id="lang-btn" aria-label="Language">EN</button><button id="theme-btn" aria-label="Theme">☀</button></div>
+</div></header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero-sec">
+  <div class="wrap hero fade">
+    <img class="photo" src="assets/profil.jpg" alt="Profil fotoğrafı / Profile photo">
+    <div>
+      <p class="muted tr">Merhaba, ben</p><p class="muted en">Hi, I'm</p>
+      <h1>Adın Soyadın</h1>
+      <p class="sub tr">Bilgisayar Mühendisliği 1. Sınıf Öğrencisi</p>
+      <p class="sub en">1st Year Computer Engineering Student</p>
+      <div class="links">
+        <a class="btn fill" href="#projects"><span class="tr">Projelerim</span><span class="en">My Projects</span></a>
+        <a class="btn" href="#contact"><span class="tr">İletişime Geç</span><span class="en">Get in Touch</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about"><div class="wrap">
+  <h2 class="sec"><span class="tr">Hakkımda</span><span class="en">About Me</span></h2>
+  <div class="card">
+    <p class="tr">Merhaba, ben bilgisayar mühendisliği birinci sınıf öğrencisiyim. Web geliştirme ve yazılım projeleri üzerinde çalışıyor, yaparak öğrenmeyi seviyorum. Buraya kendi hakkında kısa bir tanıtım yazısı ekle.</p>
+    <p class="en">Hi, I'm a first-year computer engineering student. I work on web development and software projects and I like learning by building. Add a short intro about yourself here.</p>
+  </div>
+  <div class="two">
+    <div class="card">
+      <h3><span class="tr">Eğitim</span><span class="en">Education</span></h3>
+      <div class="tl" style="margin-top:12px"><div class="item">
+        <h3 style="font-size:1rem"><span class="tr">Bilgisayar Mühendisliği (Lisans)</span><span class="en">B.Sc. Computer Engineering</span></h3>
+        <p class="muted">Üniversite Adı / University Name · 2026 –</p>
+      </div></div>
+    </div>
+    <div class="card">
+      <h3><span class="tr">Eğitimler ve Sertifikalar</span><span class="en">Courses &amp; Certificates</span></h3>
+      <ul class="plain" style="margin-top:8px">
+        <li><span class="tr">Eğitim / sertifika adı (kurum, yıl)</span><span class="en">Course / certificate (provider, year)</span></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- PROJECTS -->
+<section id="projects"><div class="wrap">
+  <h2 class="sec"><span class="tr">Projeler</span><span class="en">Projects</span></h2>
+  <div class="grid">
+
+    <article class="card proj">
+      <div class="thumb"><span class="tr">Görsel eklenecek</span><span class="en">Image coming soon</span><img src="assets/cafe-cb.png" alt="CAFE C&amp;B" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>CAFE C&amp;B</h3>
+        <span class="badge tr">Devam ediyor</span><span class="badge en">In progress</span>
+        <p class="tr">Türkçe/İngilizce sürükle-bırak barista simülatörü. Müşterinin siparişini dinle, tezgâha geç; kahveyi öğüt, espresso çek, sütü buharla ve fincanı müşteriye servis et. Yeni tarifleri oyun parasıyla aç, kafeni geliştir. İlk sipariş baş barista Ülkü ile eğitim şeklinde gelir. Telefonda ve çevrimdışı oynanır.</p>
+        <p class="en">A Turkish/English drag-and-drop barista simulator. Take the customer's order, head to the bench, grind, pull espresso, steam milk and serve the cup. Unlock new recipes with in-game money and grow your café. A short tutorial with head barista Jesica walks you through the first order. Works on phones and offline.</p>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Canvas</span><span class="tag">PWA</span></div>
+        <div class="links">
+          <a class="btn" href="https://github.com/beratonarici25-beep/CAFE-CB" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn fill" href="https://beratonarici25-beep.github.io/CAFE-CB/" target="_blank" rel="noopener"><span class="tr">Oyna</span><span class="en">Play</span></a>
+        </div>
+      </div>
+      <div class="shots" style="margin-bottom:16px">
+        <a href="assets/cafe-cb-menu.jpg" target="_blank"><img src="assets/cafe-cb-menu.jpg" alt="CAFE C&amp;B ana menü / main menu" loading="lazy"></a>
+        <a href="assets/cafe-cb.jpg" target="_blank"><img src="assets/cafe-cb.jpg" alt="CAFE C&amp;B müşteri ekranı / customer view" loading="lazy"></a>
+        <a href="assets/cafe-cb-bench.jpg" target="_blank"><img src="assets/cafe-cb-bench.jpg" alt="CAFE C&amp;B barista tezgâhı / barista bench" loading="lazy"></a>
+      </div>
+    </article>
+
+    <article class="card proj">
+      <div class="thumb"><span class="tr">Görsel eklenecek</span><span class="en">Image coming soon</span><img src="assets/netprojem.png" alt="NetProjem" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>NetProjem</h3>
+        <span class="badge tr">Devam ediyor</span><span class="badge en">In progress</span>
+        <p class="tr">Proje planlama web uygulaması (CENG 141 dönem projesi).</p>
+        <p class="en">A project-planning web app (CENG 141 semester project).</p>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="links">
+          <a class="btn" href="https://github.com/beratonarici25-beep/netprojem" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn fill" href="#" target="_blank" rel="noopener"><span class="tr">Canlı Aç</span><span class="en">Open Live</span></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card proj">
+      <div class="thumb"><span class="tr">Görsel eklenecek</span><span class="en">Image coming soon</span><img src="assets/ogrenci-asistan.png" alt="" onerror="this.remove()"></div>
+      <div class="body">
+        <h3><span class="tr">Öğrenci Asistan Sistemi</span><span class="en">Student Assistant</span></h3>
+        <span class="badge tr">Planlanıyor</span><span class="badge en">Planned</span>
+        <p class="tr">Ders planı, notlar, ders programı hatırlatıcıları ve harcama/zaman raporları.</p>
+        <p class="en">Study plans, notes, class schedule reminders, and expense/time reports.</p>
+        <div class="tags"><span class="tag">TBD</span></div>
+        <div class="links"><a class="btn" href="https://github.com/beratonarici25-beep" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<!-- SKILLS -->
+<section id="skills"><div class="wrap">
+  <h2 class="sec"><span class="tr">Beceriler</span><span class="en">Skills</span></h2>
+  <div class="two">
+    <div class="card">
+      <h3><span class="tr">Teknik</span><span class="en">Technical</span></h3>
+      <div class="tags" style="margin-top:10px"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Git / GitHub</span></div>
+      <p class="muted tr" style="margin-top:10px">Bu bölüm sonra doldurulacak.</p>
+      <p class="muted en" style="margin-top:10px">This section will be filled in later.</p>
+    </div>
+    <div class="card">
+      <h3><span class="tr">Diller</span><span class="en">Languages</span></h3>
+      <ul class="plain" style="margin-top:8px">
+        <li><span class="tr">Türkçe — Anadil</span><span class="en">Turkish — Native</span></li>
+        <li><span class="tr">İngilizce — Seviyeni yaz</span><span class="en">English — Add your level</span></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- CV -->
+<section id="cv"><div class="wrap">
+  <h2 class="sec">CV</h2>
+  <div class="card">
+    <p class="tr">Özgeçmişimi PDF olarak indirebilirsin.</p>
+    <p class="en">You can download my résumé as a PDF.</p>
+    <div class="links" style="margin-top:14px">
+      <a class="btn fill" href="assets/cv.pdf" download><span class="tr">PDF İndir</span><span class="en">Download PDF</span></a>
+    </div>
+  </div>
+</div></section>
+
+<!-- CONTACT -->
+<section id="contact"><div class="wrap">
+  <h2 class="sec"><span class="tr">İletişim</span><span class="en">Contact</span></h2>
+  <div class="card">
+    <p class="tr">Staj, iş veya proje teklifleri için bana ulaşabilirsin.</p>
+    <p class="en">Reach out for internships, jobs, or project ideas.</p>
+    <ul class="plain" style="margin-top:10px">
+      <li><strong>GitHub:</strong> <a href="https://github.com/beratonarici25-beep" target="_blank" rel="noopener">github.com/beratonarici25-beep</a></li>
+      <li><strong>E-posta / Email:</strong> <a href="mailto:eposta@ornek.com">eposta@ornek.com</a></li>
+    </ul>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> Adın Soyadın</div></footer>
+</body>
+</html>
