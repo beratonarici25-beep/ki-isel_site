@@ -76,6 +76,42 @@
       } catch (e) { window.location.href = "mailto:" + mail; }
     });
 
+    var shots = document.querySelectorAll("a.shot");
+    if (shots.length) {
+      var box = document.createElement("div");
+      box.className = "lightbox"; box.hidden = true;
+      box.setAttribute("role", "dialog"); box.setAttribute("aria-modal", "true");
+      box.innerHTML = '<button type="button" class="lb-close"><span class="tr">Kapat</span><span class="en">Close</span><kbd>Esc</kbd></button><img alt="">';
+      document.body.appendChild(box);
+      var bimg = box.querySelector("img"), bclose = box.querySelector(".lb-close"), lastShot = null;
+      var openBox = function (a) {
+        lastShot = a;
+        var im = a.querySelector("img");
+        bimg.src = a.getAttribute("href");
+        bimg.alt = im ? im.alt : "";
+        box.setAttribute("aria-label", bimg.alt);
+        box.hidden = false;
+        document.body.style.overflow = "hidden";
+        bclose.focus();
+      };
+      var closeBox = function () {
+        box.hidden = true;
+        bimg.removeAttribute("src");
+        document.body.style.overflow = "";
+        if (lastShot) lastShot.focus();
+      };
+      shots.forEach(function (a) {
+        a.addEventListener("click", function (e) { e.preventDefault(); openBox(a); });
+      });
+      bclose.addEventListener("click", closeBox);
+      box.addEventListener("click", function (e) { if (e.target === box) closeBox(); });
+      document.addEventListener("keydown", function (e) {
+        if (box.hidden) return;
+        if (e.key === "Escape") closeBox();
+        else if (e.key === "Tab") { e.preventDefault(); bclose.focus(); }
+      });
+    }
+
     var pb = document.getElementById("print-btn");
     if (pb) pb.addEventListener("click", function () { window.print(); });
   });
