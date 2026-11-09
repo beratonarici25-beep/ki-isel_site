@@ -3,167 +3,207 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Berat Onarıcı | Portfolyo</title>
-<meta name="description" content="Bilgisayar mühendisliği öğrencisi kişisel portfolyo / Computer engineering student portfolio">
+<title>Berat Onarıcı | Bilgisayar Mühendisliği Öğrencisi</title>
+<meta name="description" content="Berat Onarıcı, Pamukkale Üniversitesi Bilgisayar Mühendisliği öğrencisi. Projeler, beceriler ve iletişim. / Computer Engineering student at Pamukkale University: projects, skills and contact.">
+<link rel="preload" href="assets/fonts/nunito-400-800-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
 </head>
 <body>
-<header><div class="wrap bar">
+<a class="skip" href="#about"><span class="tr">İçeriğe geç</span><span class="en">Skip to content</span></a>
+
+<header class="site-header"><div class="wrap bar">
   <a class="logo" href="#top">Berat Onarıcı</a>
-  <nav>
+  <nav aria-label="Menü">
     <a href="#about"><span class="tr">Hakkımda</span><span class="en">About</span></a>
     <a href="#projects"><span class="tr">Projeler</span><span class="en">Projects</span></a>
     <a href="#skills"><span class="tr">Beceriler</span><span class="en">Skills</span></a>
     <a href="#cv">CV</a>
     <a href="#contact"><span class="tr">İletişim</span><span class="en">Contact</span></a>
   </nav>
-  <div class="tools"><button id="lang-btn" aria-label="Language">EN</button><button id="theme-btn" aria-label="Theme">☀</button></div>
+  <div class="tools">
+    <button id="lang-btn" type="button">EN</button>
+    <button id="theme-btn" type="button">Açık</button>
+  </div>
 </div></header>
 
 <main id="top">
 
 <!-- HERO -->
-<section class="hero-sec">
-  <div class="wrap hero fade">
-    <img class="photo" src="assets/profil.jpg" alt="Profil fotoğrafı / Profile photo">
-    <div>
-      <p class="muted tr">Merhaba, ben</p><p class="muted en">Hi, I'm</p>
-      <h1>Berat Onarıcı</h1>
-      <p class="sub tr">Bilgisayar Mühendisliği 1. Sınıf Öğrencisi · Pamukkale Üniversitesi</p>
-      <p class="sub en">1st Year Computer Engineering Student · Pamukkale University</p>
-      <div class="links">
-        <a class="btn fill" href="#projects"><span class="tr">Projelerim</span><span class="en">My Projects</span></a>
-        <a class="btn" href="#contact"><span class="tr">İletişime Geç</span><span class="en">Get in Touch</span></a>
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <p class="status fade-in"><span class="tr">Staj ve iş fırsatlarına açığım</span><span class="en">Open to internships and jobs</span></p>
+    <h1 class="name" aria-label="Berat Onarıcı">
+      <span class="line" aria-hidden="true"><span class="ch" style="--i:0">B</span><span class="ch" style="--i:1">e</span><span class="ch" style="--i:2">r</span><span class="ch" style="--i:3">a</span><span class="ch" style="--i:4">t</span></span>
+      <span class="line" aria-hidden="true"><span class="ch" style="--i:5">O</span><span class="ch" style="--i:6">n</span><span class="ch" style="--i:7">a</span><span class="ch" style="--i:8">r</span><span class="ch" style="--i:9">ı</span><span class="ch" style="--i:10">c</span><span class="ch" style="--i:11">ı</span></span>
+    </h1>
+    <div class="fade-in">
+      <p class="role"><span class="tr">Bilgisayar Mühendisliği öğrencisi</span><span class="en">Computer Engineering student</span></p>
+      <p class="uni"><span class="tr">Pamukkale Üniversitesi, 1. sınıf</span><span class="en">Pamukkale University, 1st year</span></p>
+      <p class="pitch tr">Bir projeyi baştan sona bitirerek öğreniyorum: önce çalışan küçük bir sürüm, sonra her gün biraz daha iyisi.</p>
+      <p class="pitch en">I learn by finishing projects end to end: a small working version first, then a little better every day.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects"><span class="tr">Projelerime bak</span><span class="en">See my projects</span></a>
+        <a class="btn" href="#contact"><span class="tr">İletişime geç</span><span class="en">Get in touch</span></a>
       </div>
     </div>
   </div>
-</section>
+  <figure class="portrait">
+    <img src="assets/profil.jpg" alt="Berat Onarıcı portre fotoğrafı / portrait photo" width="600" height="600" fetchpriority="high">
+  </figure>
+</div></section>
 
 <!-- ABOUT -->
-<section id="about"><div class="wrap">
-  <h2 class="sec"><span class="tr">Hakkımda</span><span class="en">About Me</span></h2>
-  <div class="card">
-    <p class="tr">Merhaba, ben Berat Onarıcı. 2008 doğumluyum, 18 yaşındayım ve Pamukkale Üniversitesi'nde Bilgisayar Mühendisliği birinci sınıf öğrencisiyim. Web geliştirme ve oyun/yazılım projeleri üzerinde çalışıyorum. Staj ve iş fırsatlarına açığım.</p>
-    <p class="en">Hi, I'm Berat Onarıcı. I was born in 2008, I'm 18, and I'm a first-year Computer Engineering student at Pamukkale University. I work on web development and game/software projects. I'm open to internships and job opportunities.</p>
+<section id="about" class="section alt"><div class="wrap">
+  <h2><span class="tr">Hakkımda</span><span class="en">About me</span></h2>
+  <div class="about-grid">
+    <div class="prose">
+      <p class="tr">Merhaba, ben Berat. 2008 doğumluyum, 18 yaşındayım ve Pamukkale Üniversitesi'nde Bilgisayar Mühendisliği birinci sınıf öğrencisiyim. Web geliştirme ve oyun/yazılım projeleri üzerinde çalışıyorum.</p>
+      <p class="en">Hi, I'm Berat. I was born in 2008, I'm 18, and I'm a first-year Computer Engineering student at Pamukkale University. I work on web development and game/software projects.</p>
+      <p class="tr">Staj ve iş fırsatlarına açığım. Yeni bir şey öğrenmem gerektiğinde bunu bir projeye çeviririm ve çalışır hale gelene kadar bırakmam.</p>
+      <p class="en">I'm open to internships and job opportunities. When I need to learn something new, I turn it into a project and keep going until it works.</p>
+    </div>
+    <dl class="facts">
+      <div><dt><span class="tr">Üniversite</span><span class="en">University</span></dt><dd>Pamukkale Üniversitesi</dd></div>
+      <div><dt><span class="tr">Bölüm</span><span class="en">Department</span></dt><dd><span class="tr">Bilgisayar Mühendisliği</span><span class="en">Computer Engineering</span></dd></div>
+      <div><dt><span class="tr">Sınıf</span><span class="en">Year</span></dt><dd><span class="tr">1. sınıf, 2026'da başladı</span><span class="en">1st year, started in 2026</span></dd></div>
+      <div><dt><span class="tr">Diller</span><span class="en">Languages</span></dt><dd><span class="tr">Türkçe, İngilizce</span><span class="en">Turkish, English</span></dd></div>
+    </dl>
   </div>
 
-  <div class="card">
-    <h3><span class="tr">Yaparak Öğreniyorum</span><span class="en">I Learn by Doing</span></h3>
-    <p class="tr" style="margin-top:8px">Bir konuyu sadece okuyarak değil, onunla gerçek bir şey yaparak öğrenirim. Yöntemim şu şekilde işler:</p>
-    <p class="en" style="margin-top:8px">I don't just read about a topic, I build something real with it. My approach works like this:</p>
-    <ul class="plain" style="margin-top:8px">
-      <li class="tr"><strong>1. Küçük başla:</strong> Konuyu çalışan küçük bir projeye çeviririm (örneğin bir oyun ya da planlama uygulaması).</li>
-      <li class="en"><strong>1. Start small:</strong> I turn a topic into a small working project (a game or a planning app, for example).</li>
-      <li class="tr"><strong>2. Takılınca araştır:</strong> Hata aldığımda nedenini araştırır, dokümanlara bakar ve yapay zekâ araçlarından destek alırım; çözümü anlayıp kendim uygularım.</li>
-      <li class="en"><strong>2. Research when stuck:</strong> When I hit an error I look into the cause, read docs and use AI tools for help, then understand the fix and apply it myself.</li>
-      <li class="tr"><strong>3. Kayıt tut ve geliştir:</strong> Her projeyi GitHub'da tutarım; böylece gelişimim görünür olur ve kodu adım adım iyileştiririm.</li>
-      <li class="en"><strong>3. Keep records and improve:</strong> I keep every project on GitHub, so my progress is visible and I improve the code step by step.</li>
-    </ul>
-    <p class="tr muted" style="margin-top:10px">CAFE C&amp;B ve NetProjem bu yöntemle çıktı: ikisi de küçük bir fikirle başladı, her gün biraz daha geliştirildi.</p>
-    <p class="en muted" style="margin-top:10px">CAFE C&amp;B and NetProjem came out of this approach: both started as small ideas and grew a bit every day.</p>
-  </div>
-  <div class="two">
-    <div class="card">
-      <h3><span class="tr">Eğitim</span><span class="en">Education</span></h3>
-      <div class="tl" style="margin-top:12px"><div class="item">
-        <h3 style="font-size:1rem"><span class="tr">Bilgisayar Mühendisliği (Lisans)</span><span class="en">B.Sc. Computer Engineering</span></h3>
-        <p class="muted">Pamukkale Üniversitesi / Pamukkale University · 2026 –</p>
-      </div></div>
-    </div>
-    <div class="card">
-      <h3><span class="tr">Eğitimler ve Sertifikalar</span><span class="en">Courses &amp; Certificates</span></h3>
-      <ul class="plain" style="margin-top:8px">
-        <li><span class="tr">Eğitim / sertifika adı (kurum, yıl)</span><span class="en">Course / certificate (provider, year)</span></li>
-      </ul>
-    </div>
+  <div class="learn">
+    <h3><span class="tr">Yaparak öğreniyorum</span><span class="en">I learn by doing</span></h3>
+    <p class="lead tr">Bir konuyu sadece okuyarak değil, onunla gerçek bir şey yaparak öğrenirim. Yöntemim üç adımdan oluşuyor.</p>
+    <p class="lead en">I don't just read about a topic, I build something real with it. My method has three steps.</p>
+    <ol class="steps">
+      <li>
+        <span class="n">1</span>
+        <h4><span class="tr">Küçük başla</span><span class="en">Start small</span></h4>
+        <p class="tr">Konuyu çalışan küçük bir projeye çeviririm, örneğin bir oyun ya da bir planlama uygulaması.</p>
+        <p class="en">I turn the topic into a small working project, such as a game or a planning app.</p>
+      </li>
+      <li>
+        <span class="n">2</span>
+        <h4><span class="tr">Takılınca araştır</span><span class="en">Research when stuck</span></h4>
+        <p class="tr">Hata aldığımda nedenini araştırır, dokümanlara bakar ve yapay zekâ araçlarından destek alırım. Çözümü anlayıp kendim uygularım.</p>
+        <p class="en">When I hit an error I look into the cause, read the docs and use AI tools for help. I make sure I understand the fix, then apply it myself.</p>
+      </li>
+      <li>
+        <span class="n">3</span>
+        <h4><span class="tr">Kaydet ve geliştir</span><span class="en">Record and improve</span></h4>
+        <p class="tr">Her projeyi GitHub'da tutarım. Böylece gelişimim görünür olur ve kodu adım adım iyileştiririm.</p>
+        <p class="en">I keep every project on GitHub, so my progress is visible and I improve the code step by step.</p>
+      </li>
+    </ol>
+    <p class="foot muted tr">CAFE C&amp;B ve NetProjem bu yöntemle çıktı: ikisi de küçük bir fikirle başladı ve her gün biraz daha geliştirildi.</p>
+    <p class="foot muted en">CAFE C&amp;B and NetProjem came out of this method: both started as small ideas and grew a little every day.</p>
   </div>
 </div></section>
 
 <!-- PROJECTS -->
-<section id="projects"><div class="wrap">
-  <h2 class="sec"><span class="tr">Projeler</span><span class="en">Projects</span></h2>
-  <div class="grid">
+<section id="projects" class="section"><div class="wrap">
+  <h2><span class="tr">Projeler</span><span class="en">Projects</span></h2>
 
-    <article class="card proj">
-      <div class="thumb"><span class="tr">Görsel eklenecek</span><span class="en">Image coming soon</span><img src="assets/cafe-cb.jpg" alt="CAFE C&amp;B" onerror="this.remove()"></div>
-      <div class="body">
-        <h3>CAFE C&amp;B</h3>
-        <span class="badge tr">Devam ediyor</span><span class="badge en">In progress</span>
-        <p class="tr">Türkçe/İngilizce sürükle-bırak barista simülatörü. Müşteri siparişini verir; sen tezgâha geçip kahveyi öğütür, espresso çeker, sütü buharlaştırır ve fincanı müşteriye servis edersin. Kazandığın parayla cappuccino, flat white, mocha gibi yeni tarifleri açar, kafeni geliştirirsin. İlk sipariş, baş barista Ülkü ile kısa bir eğitim olarak gelir. Telefonda ve çevrimdışı oynanabilir.</p>
-        <p class="en">A Turkish/English drag-and-drop barista simulator. A customer places an order; you head to the bench, grind the coffee, pull espresso, steam milk and serve the cup. Use the money you earn to unlock new recipes like cappuccino, flat white and mocha and upgrade your café. Your first order is a short tutorial with head barista Jesica. Playable on phones and offline.</p>
-        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Canvas</span><span class="tag">PWA</span></div>
-        <div class="links">
-          <a class="btn" href="https://github.com/beratonarici25-beep/CAFE-CB" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn fill" href="https://beratonarici25-beep.github.io/CAFE-CB/" target="_blank" rel="noopener"><span class="tr">Oyna</span><span class="en">Play</span></a>
-        </div>
+  <article class="project">
+    <div class="project-media">
+      <a class="shot" href="assets/cafe-cb.jpg" target="_blank" rel="noopener"><img src="assets/cafe-cb.jpg" alt="CAFE C&amp;B müşteri ekranı / customer view" width="1280" height="720"></a>
+      <div class="thumbs">
+        <a class="shot" href="assets/cafe-cb-menu.jpg" target="_blank" rel="noopener"><img src="assets/cafe-cb-menu.jpg" alt="CAFE C&amp;B ana menü / main menu" width="1280" height="720" loading="lazy"></a>
+        <a class="shot" href="assets/cafe-cb-bench.jpg" target="_blank" rel="noopener"><img src="assets/cafe-cb-bench.jpg" alt="CAFE C&amp;B barista tezgâhı / barista bench" width="1280" height="720" loading="lazy"></a>
       </div>
-      <div class="shots" style="margin-bottom:16px">
-        <a href="assets/cafe-cb-menu.jpg" target="_blank"><img src="assets/cafe-cb-menu.jpg" alt="CAFE C&amp;B ana menü / main menu" loading="lazy"></a>
-        <a href="assets/cafe-cb-bench.jpg" target="_blank"><img src="assets/cafe-cb-bench.jpg" alt="CAFE C&amp;B barista tezgâhı / barista bench" loading="lazy"></a>
+    </div>
+    <div>
+      <span class="state"><span class="tr">Geliştirilmeye devam ediyor</span><span class="en">Still in development</span></span>
+      <h3>CAFE C&amp;B</h3>
+      <p class="desc tr">Türkçe/İngilizce sürükle-bırak barista simülatörü. Müşteri siparişini verir; sen tezgâha geçip kahveyi öğütür, espresso çeker, sütü buharlaştırır ve fincanı müşteriye servis edersin. Kazandığın parayla cappuccino, flat white, mocha gibi yeni tarifleri açar, kafeni geliştirirsin. İlk sipariş, baş barista Ülkü ile kısa bir eğitim olarak gelir. Telefonda ve çevrimdışı oynanabilir.</p>
+      <p class="desc en">A Turkish/English drag-and-drop barista simulator. A customer places an order; you head to the bench, grind the coffee, pull espresso, steam milk and serve the cup. Use the money you earn to unlock new recipes like cappuccino, flat white and mocha and upgrade your café. Your first order is a short tutorial with head barista Jesica. Playable on phones and offline.</p>
+      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Canvas</li><li>PWA</li></ul>
+      <div class="actions">
+        <a class="btn primary" href="https://beratonarici25-beep.github.io/CAFE-CB/" target="_blank" rel="noopener"><span class="tr">Oyunu oyna</span><span class="en">Play the game</span></a>
+        <a class="btn" href="https://github.com/beratonarici25-beep/CAFE-CB" target="_blank" rel="noopener">GitHub</a>
       </div>
-    </article>
+    </div>
+  </article>
 
-    <article class="card proj">
-      <div class="thumb"><span class="tr">Görsel eklenecek</span><span class="en">Image coming soon</span><img src="assets/netprojem.jpg" alt="NetProjem" onerror="this.remove()"></div>
-      <div class="body">
-        <h3>NetProjem</h3>
-        <span class="badge tr">Devam ediyor</span><span class="badge en">In progress</span>
-        <p class="tr">Proje planlama web uygulaması (CENG 141 dönem projesi).</p>
-        <p class="en">A project-planning web app (CENG 141 semester project).</p>
-        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
-        <div class="links">
-          <a class="btn" href="https://github.com/beratonarici25-beep/netprojem" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn fill" href="#" target="_blank" rel="noopener"><span class="tr">Canlı Aç</span><span class="en">Open Live</span></a>
-        </div>
+  <article class="project flip">
+    <div class="project-media">
+      <div class="ph"><span class="tr">Ekran görüntüsü eklenecek</span><span class="en">Screenshot coming soon</span></div>
+    </div>
+    <div>
+      <span class="state"><span class="tr">Geliştirilmeye devam ediyor</span><span class="en">Still in development</span></span>
+      <h3>NetProjem</h3>
+      <p class="desc tr">Proje planlama web uygulaması. CENG 141 dersi dönem projesi olarak geliştiriyorum.</p>
+      <p class="desc en">A project-planning web app, which I'm building as the CENG 141 semester project.</p>
+      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <div class="actions">
+        <a class="btn" href="https://github.com/beratonarici25-beep/netprojem" target="_blank" rel="noopener">GitHub</a>
       </div>
-    </article>
-
-  </div>
+    </div>
+  </article>
 </div></section>
 
 <!-- SKILLS -->
-<section id="skills"><div class="wrap">
-  <h2 class="sec"><span class="tr">Beceriler</span><span class="en">Skills</span></h2>
-  <div class="two">
-    <div class="card">
+<section id="skills" class="section alt"><div class="wrap">
+  <h2><span class="tr">Beceriler</span><span class="en">Skills</span></h2>
+  <div class="skill-grid">
+    <div>
       <h3><span class="tr">Teknik</span><span class="en">Technical</span></h3>
-      <div class="tags" style="margin-top:10px"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Git / GitHub</span></div>
-      <p class="muted tr" style="margin-top:10px">Bu bölüm sonra doldurulacak.</p>
-      <p class="muted en" style="margin-top:10px">This section will be filled in later.</p>
+      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git / GitHub</li></ul>
+      <p class="soon tr">Öğrendikçe bu liste genişleyecek.</p>
+      <p class="soon en">This list will grow as I learn.</p>
     </div>
-    <div class="card">
+    <div>
       <h3><span class="tr">Diller</span><span class="en">Languages</span></h3>
-      <ul class="plain" style="margin-top:8px">
-        <li><span class="tr">Türkçe — Anadil</span><span class="en">Turkish — Native</span></li>
-        <li><span class="tr">İngilizce — Seviyeni yaz</span><span class="en">English — Add your level</span></li>
+      <ul class="list">
+        <li><span class="tr">Türkçe</span><span class="en">Turkish</span><span class="tr">Anadil</span><span class="en">Native</span></li>
+        <li><span class="tr">İngilizce</span><span class="en">English</span><span class="tr">Seviye eklenecek</span><span class="en">Level to be added</span></li>
       </ul>
     </div>
   </div>
 </div></section>
 
 <!-- CV -->
-<section id="cv"><div class="wrap">
-  <h2 class="sec">CV</h2>
-  <div class="card">
-    <p class="tr">Özgeçmişimi PDF olarak indirebilirsin.</p>
-    <p class="en">You can download my résumé as a PDF.</p>
-    <div class="links" style="margin-top:14px">
-      <a class="btn fill" href="assets/cv.pdf" download><span class="tr">PDF İndir</span><span class="en">Download PDF</span></a>
+<section id="cv" class="section"><div class="wrap">
+  <h2>CV</h2>
+  <div class="cv">
+    <div class="cv-head">
+      <div>
+        <h3>Berat Onarıcı</h3>
+        <p><span class="tr">Bilgisayar Mühendisliği öğrencisi</span><span class="en">Computer Engineering student</span></p>
+      </div>
+      <p>beratonarici25@gmail.com<br>github.com/beratonarici25-beep</p>
+    </div>
+    <div class="cv-body">
+      <div class="col">
+        <h4><span class="tr">Eğitim</span><span class="en">Education</span></h4>
+        <ul><li><strong>Pamukkale Üniversitesi</strong><small><span class="tr">Bilgisayar Mühendisliği, lisans (2026 - devam ediyor)</span><span class="en">B.Sc. Computer Engineering (2026 - present)</span></small></li></ul>
+        <h4 style="margin-top:22px"><span class="tr">Beceriler</span><span class="en">Skills</span></h4>
+        <ul><li>HTML, CSS, JavaScript, Git / GitHub</li></ul>
+      </div>
+      <div class="col">
+        <h4><span class="tr">Projeler</span><span class="en">Projects</span></h4>
+        <ul>
+          <li><strong>CAFE C&amp;B</strong><small><span class="tr">Türkçe/İngilizce barista simülatörü, mobil ve çevrimdışı çalışır</span><span class="en">Turkish/English barista simulator, works on mobile and offline</span></small></li>
+          <li><strong>NetProjem</strong><small><span class="tr">Proje planlama web uygulaması (CENG 141)</span><span class="en">Project-planning web app (CENG 141)</span></small></li>
+        </ul>
+      </div>
+    </div>
+    <div class="cv-actions">
+      <button class="btn primary" id="print-btn" type="button"><span class="tr">CV'yi PDF olarak kaydet</span><span class="en">Save CV as PDF</span></button>
     </div>
   </div>
 </div></section>
 
 <!-- CONTACT -->
-<section id="contact"><div class="wrap">
-  <h2 class="sec"><span class="tr">İletişim</span><span class="en">Contact</span></h2>
-  <div class="card">
-    <p class="tr">Staj, iş veya proje teklifleri için bana ulaşabilirsin.</p>
-    <p class="en">Reach out for internships, jobs, or project ideas.</p>
-    <ul class="plain" style="margin-top:10px">
-      <li><strong>GitHub:</strong> <a href="https://github.com/beratonarici25-beep" target="_blank" rel="noopener">github.com/beratonarici25-beep</a></li>
-      <li><strong>E-posta / Email:</strong> <a href="mailto:beratonarici25@gmail.com">beratonarici25@gmail.com</a></li>
-    </ul>
+<section id="contact" class="section alt contact"><div class="wrap">
+  <h2><span class="tr">İletişim</span><span class="en">Contact</span></h2>
+  <p class="muted tr">Staj, iş veya proje teklifleri için bana e-posta ile ulaşabilirsin.</p>
+  <p class="muted en">Email me for internships, jobs or project ideas.</p>
+  <a class="mail" href="mailto:beratonarici25@gmail.com">beratonarici25@gmail.com</a>
+  <div class="contact-row">
+    <button class="btn small" id="copy-btn" type="button" data-mail="beratonarici25@gmail.com"><span class="tr">E-postayı kopyala</span><span class="en">Copy email</span></button>
+    <a class="btn small" href="https://github.com/beratonarici25-beep" target="_blank" rel="noopener">GitHub</a>
+    <span class="copy-msg" id="copy-msg" role="status" aria-live="polite"></span>
   </div>
 </div></section>
 
